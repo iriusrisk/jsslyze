@@ -46,4 +46,8 @@ public class JSSLyze {
         return parser;
     }
 
+    public String getOutput() {
+        return output;
+    }
+
 }

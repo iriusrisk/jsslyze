@@ -135,16 +135,16 @@ public class SSLyzeParser {
         return found;
     }
 
-    public boolean containsCipherWithPartialName(String name) {
+    public boolean acceptsCipherWithPartialName(String name) {
         for (String cipher : listAllAcceptedCiphers()) {
-            if (cipher.contains(name)) return true;
+            if (cipher.toUpperCase().contains(name.toUpperCase())) return true;
         }
         return false;
     }
 
-    public boolean supportsCipher(String name) {
+    public boolean acceptsCipher(String name) {
         for (String cipher : listAllAcceptedCiphers()) {
-            if (cipher.equals(name)) return true;
+            if (cipher.toUpperCase().equals(name.toUpperCase())) return true;
         }
         return false;
     }
