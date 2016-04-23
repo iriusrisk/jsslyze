@@ -1,0 +1,100 @@
+
+
+
+ AVAILABLE PLUGINS
+ -----------------
+
+  FallbackScsvPlugin
+  OpenSslCcsInjectionPlugin
+  HeartbleedPlugin
+  SessionRenegotiationPlugin
+  HstsPlugin
+  OpenSslCipherSuitesPlugin
+  SessionResumptionPlugin
+  CompressionPlugin
+  CertificateInfoPlugin
+
+
+
+ CHECKING HOST(S) AVAILABILITY
+ -----------------------------
+
+   www.continuumsecurity.net:443                       => 95.170.83.131
+
+
+
+ SCAN RESULTS FOR WWW.CONTINUUMSECURITY.NET:443 - 95.170.83.131:443
+ ------------------------------------------------------------------
+
+  * TLSV1_1 Cipher Suites:
+      Server rejected all cipher suites.
+
+  * TLSV1 Cipher Suites:
+      Server rejected all cipher suites.
+
+  * TLSV1_2 Cipher Suites:
+      Preferred:
+        TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384             ECDH-384 bits  256 bits      HTTP 200 OK
+      Accepted:
+        TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384             ECDH-384 bits  256 bits      HTTP 200 OK
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384             ECDH-384 bits  256 bits      HTTP 200 OK
+        TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256             ECDH-384 bits  128 bits      HTTP 200 OK
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256             ECDH-384 bits  128 bits      HTTP 200 OK
+
+  * Deflate Compression:
+                                         OK - Compression disabled
+
+  * Session Renegotiation:
+      Client-initiated Renegotiation:    OK - Rejected
+      Secure Renegotiation:              OK - Supported
+
+  * OpenSSL Heartbleed:
+                                         OK - Not vulnerable to Heartbleed
+
+  * OpenSSL CCS Injection:
+                                         OK - Not vulnerable to OpenSSL CCS injection
+
+  * Certificate Basic Information:
+      SHA1 Fingerprint:                  3ad4d1ecf7f0087d94b1141975e4cc6a12ba4eb2
+      Common Name:                       continuumsecurity.net
+      Issuer:                            Let's Encrypt Authority X1
+      Serial Number:                     014C4ADE9D859E4527CCC30963DA06185185
+      Not Before:                        Mar 11 06:47:00 2016 GMT
+      Not After:                         Jun  9 06:47:00 2016 GMT
+      Signature Algorithm:               sha256WithRSAEncryption
+      Public Key Algorithm:              rsaEncryption
+      Key Size:                          2048 bit
+      Exponent:                          65537 (0x10001)
+      X509v3 Subject Alternative Name:   {'DNS': ['continuumsecurity.net', 'iriusrisk.continuumsecurity.net', 'www.continuumsecurity.net']}
+
+  * Certificate - Trust:
+      Hostname Validation:               OK - Subject Alternative Name matches www.continuumsecurity.net
+      Mozilla NSS CA Store (02/2016):    OK - Certificate is trusted
+      Microsoft CA Store (02/2016):      OK - Certificate is trusted
+      Apple CA Store (OS X 10.11.3):     OK - Certificate is trusted
+      Java 6 CA Store (Update 65):       OK - Certificate is trusted
+      Weak Signature:                    OK - No SHA1-signed certificate in the chain
+      Certificate Chain Received:        ['continuumsecurity.net', "Let's Encrypt Authority X1"]
+      Certificate Chain Order:           OK - Order is valid
+
+  * Certificate - OCSP Stapling:
+                                         NOT SUPPORTED - Server did not send back an OCSP response.
+
+  * Session Resumption:
+      With Session IDs:                  OK - Supported (5 successful, 0 failed, 0 errors, 5 total attempts).
+      With TLS Tickets:                  OK - Supported
+
+  * SSLV3 Cipher Suites:
+      Server rejected all cipher suites.
+
+  * Downgrade Attacks:
+      TLS_FALLBACK_SCSV:                 OK - Supported
+
+  * SSLV2 Cipher Suites:
+      Server rejected all cipher suites.
+
+
+
+ SCAN COMPLETED IN 9.08 S
+ ------------------------
+
